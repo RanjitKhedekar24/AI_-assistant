@@ -159,7 +159,7 @@ function UserContext({ children }) {
 
 
 
-  let value = {
+  const value = {
     recognition,
     speaking,
     setSpeaking,

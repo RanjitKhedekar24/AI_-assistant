@@ -5,14 +5,23 @@ import speakimg from "./assets/speak.gif";
 import { dataContext } from "./Context/UserContext";
 import { CiMicrophoneOn } from "react-icons/ci";
 import voice from "./assets/aiVoice.gif";
+import AI1 from "./assets/AI1.png";
 
 function App() {
-  let { recognition, speaking, setSpeaking, response, isSpeaking, setResponse ,setIsSpeaking} =
-    useContext(dataContext);
+  let {
+    recognition,
+    speaking,
+    setSpeaking,
+    response,
+    isSpeaking,
+    setResponse,
+    setIsSpeaking,
+  } = useContext(dataContext);
 
   return (
     <>
       <div className="main">
+        {/* <img src={AI1} alt="ai" id="sara" /> */}
         <img src={ai} alt="ai" id="sara" />
         <span>Hey, I'm SARA,</span>
         <span>Your AI Assistant</span>
